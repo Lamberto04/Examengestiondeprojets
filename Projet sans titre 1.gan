@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="examen_gestion_de_projets" company="" webLink="http://" view-date="2024-06-01" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3300" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="-1"/>
+        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="1e01f48a53fd416792ed893a8fc7bd2c" name="analyse des besoins" meeting="false" start="2024-07-12" duration="5" complete="0" thirdDate="2024-07-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[   - Rencontre avec les parties prenantes (direction, enseignants, personnel administratif) pour comprendre leurs besoins et attentes vis-à-vis du nouveau système informatique.
+   - Évaluation de l'infrastructure et de l'équipement informatique existants.
+   - Identification des fonctionnalités et des exigences clés du système.
+   - Rédaction d'un cahier des charges détaillé.
+]]></notes>
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="5be8d8a78bd74cdeb6d0a3961418fc13" name="conception du systeme" meeting="false" start="2024-07-19" duration="10" complete="0" thirdDate="2024-07-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[- Définition de l'architecture technique du système (matériel, logiciels, réseau, etc.).
+   - Conception de l'interface utilisateur et de l'expérience utilisateur.
+   - Spécification des différents modules et des interactions entre eux.
+   - Élaboration du plan de mise en œuvre et du calendrier prévisionnel.
+]]></notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="1b6fdabb6aed49369f86d17a0b377b53" name="developpement du systeme" meeting="false" start="2024-08-02" duration="35" complete="0" thirdDate="2024-07-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[   - Implémentation des différents modules et fonctionnalités du système.
+   - Intégration des différents composants pour obtenir un système cohérent.
+   - Développement des interfaces de communication avec les systèmes existants.
+   - Mise en place de l'infrastructure technique (serveurs, réseaux, sécurité, etc.).
+]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="1f4ce1fa8293430ab9bf52b82056a1dc" name="tests et debogages" meeting="false" start="2024-09-20" duration="10" complete="0" thirdDate="2024-07-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[   - Tests unitaires des différents modules.
+   - Tests d'intégration pour vérifier le bon fonctionnement de l'ensemble du système.
+   - Tests de performance, de sécurité et de conformité aux exigences.
+   - Identification et correction des bugs et anomalies détectés.
+
+]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="ffda492cf51a4a4f81cfeb5c5356c300" name="deploiement" meeting="false" start="2024-10-04" duration="8" complete="0" thirdDate="2024-07-01" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[   - Préparation de l'environnement de production (configuration, paramétrage, etc.).
+   - Migration des données depuis les anciens systèmes.
+   - Déploiement progressif du nouveau système dans l'école.
+   - Validation du bon fonctionnement en conditions réelles.
+]]></notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="6845fd917ea14b4d909b2c9124a68e09" name="Formation des utilisateurs" meeting="false" start="2024-10-16" duration="15" complete="0" thirdDate="2024-07-01" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[   - Création de supports de formation (manuels, tutoriels, etc.).
+   - Organisation de sessions de formation pour les différents profils d'utilisateurs.
+   - Accompagnement des utilisateurs durant les premières semaines d'utilisation.
+]]></notes>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="18244f65797e45329460aac5b82c52df" name="Maintenance et support" meeting="false" start="2024-11-06" duration="9" complete="0" thirdDate="2024-07-01" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
